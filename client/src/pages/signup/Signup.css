@@ -1,0 +1,129 @@
+/* Signup.css */
+/* body {
+    background-color: #FAF3E0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+}
+
+.header {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #8B1E1E;
+}
+
+.logo-image {
+    margin-left: 80px;
+    height: 50px;
+}
+
+.login-button {
+    margin-right: 80px;
+    background-color: #FFF5E1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #e8e2d2;
+}
+
+.body-signup {
+    min-width: 450px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFF5E1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    /* Make all elements full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #FFF8ED;
+    text-align: center;
+    box-sizing: border-box;
+    /* Ensure padding is included in the width */
+}
+
+/* select {
+    padding: 10px 0px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #FFF8ED;
+    text-align: center;
+} */
+
+.signup-btn {
+    background-color: #8b2f29;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.signup-btn:hover {
+    background-color: #7a261e;
+}
+
+.error-dialog-overlay {
+    margin-top: 80px;
+    background-color: #FFF8ED;
+    font-size: large;
+    font-weight: bold;
+}
+
+.error-dialog-overlay .error-dialog {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}

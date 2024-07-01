@@ -1,0 +1,663 @@
+.donor-home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF8ED;
+    min-height: 70px;
+    height: 100vh;
+}
+
+.donor-home-body .booked-appointment-body {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.donor-home-body .booked-appointment-body h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.donor-home-body .booked-appointment-body .booked-appointment-table {
+    background-color: #f8f5e4;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.donor-home-body .booked-appointment-body .booked-appointment-table thead {
+    background-color: #f8f3e9;
+}
+
+.donor-home-body .booked-appointment-body .booked-appointment-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    background-color: #e9e4d5;
+}
+
+.donor-home-body .booked-appointment-body .booked-appointment-table th {
+    background-color: #f8f3e9;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.donor-home-body .booked-appointment-body .booked-appointment-table tr:hover td {
+    background-color: #f1f1f1;
+}
+
+button.manual-form-btn {
+    background-color: #e3a03b;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+button.manual-form-btn:hover {
+    background-color: #cea05b;
+}
+
+button.cancel-appointment-btn {
+    background-color: #f96464;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+button.cancel-appointment-btn:hover {
+    background-color: #e55b5b;
+}
+@media (max-width: 768px) {
+    .donor-home-body .booked-appointment-body {
+        padding: 15px;
+        margin-top: 60px;
+    }
+
+    .donor-home-body .booked-appointment-body h1 {
+        font-size: 24px;
+    }
+
+    .donor-home-body .booked-appointment-body .booked-appointment-table td,
+    .donor-home-body .booked-appointment-body .booked-appointment-table th {
+        padding: 10px;
+    }
+
+    button.manual-form-btn,
+    button.cancel-appointment-btn {
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .donor-home-body .booked-appointment-body {
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .donor-home-body .booked-appointment-body h1 {
+        font-size: 20px;
+    }
+
+    .donor-home-body .booked-appointment-body .booked-appointment-table td,
+    .donor-home-body .booked-appointment-body .booked-appointment-table th {
+        padding: 8px;
+    }
+
+    button.manual-form-btn,
+    button.cancel-appointment-btn {
+        padding: 5px 8px;
+    }
+
+    .donor-home-body .booked-appointment-body .booked-appointment-table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .donor-home-body .booked-appointment-body h1 {
+        font-size: 18px;
+    }
+
+    .donor-home-body .booked-appointment-body .booked-appointment-table td,
+    .donor-home-body .booked-appointment-body .booked-appointment-table th {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button.manual-form-btn,
+    button.cancel-appointment-btn {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .donor-home-body .booked-appointment-body h1 {
+        font-size: 16px;
+    }
+
+    .donor-home-body .booked-appointment-body .booked-appointment-table td,
+    .donor-home-body .booked-appointment-body .booked-appointment-table th {
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    button.manual-form-btn,
+    button.cancel-appointment-btn {
+        padding: 3px 5px;
+        font-size: 10px;
+    }
+}
+
+.donor-home-body .book-appointment-body {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.donor-home-body .book-appointment-body h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.donor-home-body .book-appointment-body hr {
+    color: dimgray;
+}
+
+.donor-home-body .book-appointment-body .book-now-btn {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.donor-home-body .book-appointment-body .book-now-btn:hover {
+    background-color: #308b30;
+}
+
+.donor-home-body .appointment-booking-body {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.donor-home-body .appointment-booking-body {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* .donor-home-body .appointment-booking-body .donation-centers-table {
+    
+} */
+
+.donor-home-body .appointment-booking-body .donation-centers-table {
+    background-color: #f8f5e4;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.donor-home-body .appointment-booking-body .donation-centers-table thead {
+    background-color: #f8f3e9;
+}
+
+.donor-home-body .appointment-booking-body .donation-centers-table tr:nth-child(even) td {
+    background-color: #f8f3e9;
+}
+
+.donor-home-body .appointment-booking-body .donation-centers-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    background-color: #e9e4d5;
+}
+
+.donor-home-body .appointment-booking-body .donation-centers-table th {
+    background-color: #f8f3e9;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.view-times-btn, .view-in-map-btn {
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+    margin: 0px 6px;
+}
+
+.view-times-btn:hover , .view-in-map-btn:hover {
+    background-color: #7d7c7c;
+}
+/* 
+.donor-home-body .appointment-booking-body .time-slots-table {
+    background-color: #f8f5e4;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.donor-home-body .appointment-booking-body .time-slots-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    background-color: #e9e4d5;
+}
+
+.donor-home-body .appointment-booking-body .time-slots-table th {
+    background-color: #f8f3e9;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.donor-home-body .appointment-booking-body .time-slots-table tr td{
+    align-items: center;
+    justify-items: center;
+}
+
+.donor-home-body .appointment-booking-body .time-slots-table .dates-btns {
+    width: 95%;
+    padding: 10px;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donor-home-body .appointment-booking-body .time-slots-table .dates-btns ._1st-date {
+    width: 33.33%;
+    background-color: #f5e0b4;
+    border-style: none;
+    padding: 8px 0px;
+}
+
+.donor-home-body .appointment-booking-body .time-slots-table .dates-btns ._2nd-date {
+    width: 33.33%;
+    background-color: #f5e0b4;
+    border-style: none;
+    padding: 8px 0px;
+}
+
+.donor-home-body .appointment-booking-body .time-slots-table .dates-btns ._3rd-date {
+    width: 33.33%;
+    background-color: #f5e0b4;
+    border-style: none;
+    padding: 8px 0px;
+} */
+
+.time-slots-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.time-slots-table thead th {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f8f3e9;
+    padding: 10px;
+    border-bottom: 4px solid #ddd;
+}
+
+.time-slots-table tbody tr td {
+    padding: 10px;
+    background-color: #e9e4d5;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.time-slots-table tbody tr:nth-child(even) td {
+    background-color: #f8f3e9;
+}
+
+.time-slots-table .dates-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.time-slots-table .dates-btns button {
+    background-color: #f5e0b4;
+    width: 30%;
+    border: 1px solid #fed785;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.time-slots-table .dates-btns button:hover,
+.time-slots-table .dates-btns button.selected {
+    background-color: #fed785;
+}
+
+.time-slots-table .time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.available-slot-btn,
+.not-available-slot-btn {
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.available-slot-btn {
+    background-color: #DFF2BF;
+    color: #4F8A10;
+}
+
+.not-available-slot-btn {
+    background-color: #FFBABA;
+    color: #D8000C;
+    cursor: not-allowed;
+}
+
+.available-slot-btn:hover,
+.available-slot-btn.selected {
+    background-color: #BDE5F8;
+}
+
+.action-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.confirm-slot-btn,
+.Cancel-slot-btn {
+    padding: 10px 20px;
+    border-radius: 22px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-slot-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.Cancel-slot-btn {
+    background-color: #F44336;
+    color: white;
+}
+
+.confirm-slot-btn:hover {
+    background-color: #45A049;
+}
+
+.Cancel-slot-btn:hover {
+    background-color: #E53935;
+}
+
+.time-slots-table .legend {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.time-slots-table .legend div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-slots-table .legend .legend-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.time-slots-table .legend .legend-available {
+    background-color: #DFF2BF;
+}
+
+.time-slots-table .legend .legend-unavailable {
+    background-color: #FFBABA;
+}
+
+.personal-info-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog p {
+    font-size: 20px;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .form-buttons {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .confirm-personal-info-btn {
+background-color: #5cb85c;
+border: none;
+color: white;
+padding: 10px 20px;
+border-radius: 22px;
+cursor: pointer;
+font-size: 16px;
+margin-right: 10px;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .confirm-personal-info-btn:hover {
+background-color: #308b30;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .cancel-personal-info-btn {
+background-color: #d9534f;
+border: none;
+color: white;
+padding: 10px 20px;
+border-radius: 22px;
+cursor: pointer;
+font-size: 16px;
+margin-left: 10px;
+}
+
+.personal-info-dialog-overlay .personal-info-dialog .cancel-personal-info-btn:hover {
+background-color: #b5413d;
+}
+
+.confirmation-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.confirmation-dialog {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.confirmation-dialog-overlay .confirmation-dialog p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+}
+
+.confirmation-dialog-overlay .confirmation-dialog .confirm-appointment-btn {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.confirmation-dialog-overlay .confirmation-dialog .confirm-appointment-btn:hover {
+    background-color: #308b30;
+}
+
+.confirmation-dialog-overlay .confirmation-dialog .cancel-confirm-appointment-btn {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.confirmation-dialog-overlay .confirmation-dialog .cancel-confirm-appointment-btn:hover {
+    background-color: #b5413d;
+}
+
+.manual-form-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.manual-form-dialog {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.manual-form-dialog-overlay .manual-form-dialog p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    /* font-weight: bold; */
+}
+
+.manual-form-dialog-overlay .manual-form-dialog .manual-form-btn {
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.manual-form-dialog-overlay .manual-form-dialog .manual-form-btn:hover {
+    background-color: #7d7c7c;
+}
+
+.manual-form-dialog-overlay .manual-form-dialog .view-donation-regulation-btn {
+    background-color: #8B1E1E;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.manual-form-dialog-overlay .manual-form-dialog .view-donation-regulation-btn:hover {
+    background-color: #9a4343;
+}
+
+.ok-btn {
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.ok-btn:hover {
+    background-color: #7d7c7c;
+}

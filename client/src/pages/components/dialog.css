@@ -1,0 +1,51 @@
+/* ConfirmationDialog.css */
+.confirmation-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-dialog {
+    background: #FFF5E1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-dialog p {
+    margin-bottom: 20px;
+}
+
+.confirm-btn {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.confirm-btn:hover {
+    background-color: #308b30;
+}
+
+.cancel-btn {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background-color: #b5413d;
+}

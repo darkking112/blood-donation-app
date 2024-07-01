@@ -1,0 +1,134 @@
+/* HomePage.css */
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF8ED;
+    min-height: 70px;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #8B1E1E;
+    padding: 20px;
+}
+
+.header h3 {
+    margin: 6px 6px 6px 50px;
+    padding-left: 10px;
+    color: #FFF5E1; 
+}
+
+.logout-btn {
+    margin-right: 80px;
+    margin: 6px 80px 6px 0px;
+    background-color: #FFF5E1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.body-home {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.body h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: #f8f5e4;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f8f3e9;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    background-color: #e9e4d5;
+}
+
+th {
+    background-color: #f8f3e9;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8f3e9;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.table-body-admin-home-page td:nth-child(4) {
+    display: flex;
+    justify-content: space-around;
+}
+
+button.change-admin-btn {
+    background-color: #e3a03b;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+button.change-admin-btn:hover {
+    background-color: #cea05b;
+}
+
+button.remove-btn {
+    background-color: #f96464;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+button.remove-btn:hover {
+    background-color: #e55b5b;
+}
+
+button.add-btn {
+    background-color: #f1e6c9;
+    border: none;
+    font-weight: bold;
+    color: #8B1E1E;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+button.add-btn:hover {
+    background-color: #dacca8;
+}

@@ -1,0 +1,124 @@
+/* HomePage.css */
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF8ED;
+    min-height: 70px;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #8B1E1E;
+    padding: 20px;
+}
+
+.header h3 {
+    margin: 6px 6px 6px 50px;
+    padding-left: 10px;
+    color: #FFF5E1;
+}
+
+.logout-btn {
+    margin-right: 80px;
+    margin: 6px 80px 6px 0px;
+    background-color: #FFF5E1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.donation-center-home-body {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.body h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: #f8f5e4;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f8f3e9;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f3e9;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+td {
+    background-color: #e9e4d5;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8f3e9;
+}
+
+.nurse-list-table tr td:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+button.remove-nurse-btn {
+    background-color: #f96464;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+button.remove-nurse-btn:hover {
+    background-color: #e55b5b;
+}
+
+button.add-nurse-btn {
+    background-color: #f1e6c9;
+    border: none;
+    font-weight: bold;
+    color: #8B1E1E;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+button.add-nurse-btn:hover {
+    background-color: #dacca8;
+}

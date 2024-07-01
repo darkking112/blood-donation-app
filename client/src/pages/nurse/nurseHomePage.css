@@ -1,0 +1,135 @@
+.nurse-home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF8ED;
+    min-height: 70px;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #8B1E1E;
+    padding: 20px;
+}
+
+.header h3 {
+    margin: 6px 6px 6px 50px;
+    padding-left: 10px;
+    color: #FFF5E1;
+}
+
+.logout-btn {
+    margin-right: 80px;
+    margin: 6px 80px 6px 0px;
+    background-color: #FFF5E1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.nurse-home-body {
+    margin-top: 80px;
+    background-color: #FAF3E0;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.body h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.status-btns {
+    background-color: #f8f5e4;
+    width: 100%;
+}
+
+.status-btn {
+    width: 33.33%;
+    padding: 10px 0px;
+    background-color: #f5e0b4;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.status-btns .selected {
+    background-color: #fed785;
+}
+
+table {
+    background-color: #f8f5e4;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #f8f3e9;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f3e9;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+td {
+    background-color: #e9e4d5;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8f3e9;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+td:nth-child(5) {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+button.approve-btn {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+button.approve-btn:hover {
+    background-color: #308b30;
+}
+
+button.reject-btn {
+    background-color: #f96464;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+button.reject-btn:hover {
+    background-color: #e55b5b;
+}
