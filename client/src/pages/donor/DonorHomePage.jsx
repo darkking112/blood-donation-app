@@ -20,7 +20,7 @@ function DonorHomePage() {
 
     const fetchBookedAppointment = async () => {
         try {
-            const response = await fetch('http://version-1-production.up.railway.app/donor/view-booked-appointment', {
+            const response = await fetch('https://version-1-production.up.railway.app/donor/view-booked-appointment', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ id: donor.Donor_ID })
@@ -40,7 +40,7 @@ function DonorHomePage() {
     const handleCancelAppointment = async () => {
         console.log(bookedAppointment[1][0].Appointment_ID);
         try {
-            const response = await fetch(`http://version-1-production.up.railway.app/donor/cancel-appointment/${bookedAppointment[1][0].Appointment_ID}`, {
+            const response = await fetch(`https://version-1-production.up.railway.app/donor/cancel-appointment/${bookedAppointment[1][0].Appointment_ID}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             });

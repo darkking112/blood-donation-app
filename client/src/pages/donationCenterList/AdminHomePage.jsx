@@ -25,7 +25,7 @@ function HomePage({ adminName }) {
     const admin = location.state ? location.state.user : null;
 
     useEffect(() => {
-        fetch('http://version-1-production.up.railway.app/admin/donationcenterlist')
+        fetch('https://version-1-production.up.railway.app/admin/donationcenterlist')
             .then(response => response.json())
             .then(data => {
                 if (typeof data === 'string') {
@@ -45,7 +45,7 @@ function HomePage({ adminName }) {
     }
 
     const handleConfirmRemove = () => {
-        fetch(`http://version-1-production.up.railway.app/admin/removedonationcenter/${currentCenter.User_ID}`, {
+        fetch(`https://version-1-production.up.railway.app/admin/removedonationcenter/${currentCenter.User_ID}`, {
             method: 'DELETE'
         })
         .then(response => {
@@ -72,7 +72,7 @@ function HomePage({ adminName }) {
     }
 
     const handleSaveAdmin = (updatedAdmin) => {
-        fetch(`http://version-1-production.up.railway.app/admin/changedonationcenteradmin/${currentCenter.User_ID}`, {
+        fetch(`https://version-1-production.up.railway.app/admin/changedonationcenteradmin/${currentCenter.User_ID}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ function HomePage({ adminName }) {
     }
 
     const addDonationCenter = (newCenter) => {
-        fetch('http://version-1-production.up.railway.app/admin/adddonationcenter', {
+        fetch('https://version-1-production.up.railway.app/admin/adddonationcenter', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

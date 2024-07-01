@@ -49,7 +49,7 @@ function AppointmentBooking({ donationCenters, donor }) {
         setViewCentersTable(false);
         setCurrentCenter(donationCenters.filter(dc => dc.DC_ID === id));
         try {
-            const response = await fetch('http://version-1-production.up.railway.app/donor/view-available-appointments', {
+            const response = await fetch('https://version-1-production.up.railway.app/donor/view-available-appointments', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ function AppointmentBooking({ donationCenters, donor }) {
     const handleConfirmPersonalInfo = async (donor) => {
         console.log(donor);
         try {
-        const response = await fetch(`http://version-1-production.up.railway.app/donor/edit-personal-data/${donor.Donor_ID}`, {
+        const response = await fetch(`https://version-1-production.up.railway.app/donor/edit-personal-data/${donor.Donor_ID}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ function AppointmentBooking({ donationCenters, donor }) {
     const handleConfirmAppointment = async () => {
         console.log(donor);
         try {
-        const response = await fetch('http://version-1-production.up.railway.app/donor/book-an-appointment', {
+        const response = await fetch('https://version-1-production.up.railway.app/donor/book-an-appointment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

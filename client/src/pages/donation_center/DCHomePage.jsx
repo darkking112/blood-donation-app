@@ -16,7 +16,7 @@ function DCHomePage() {
     const location = useLocation();
     const DC = location.state ? location.state.user : null;
     useEffect(() => {
-        fetch(`http://version-1-production.up.railway.app/donationcenteradmin/nurse-list/${DC.DC_Admin_ID}`)
+        fetch(`https://version-1-production.up.railway.app/donationcenteradmin/nurse-list/${DC.DC_Admin_ID}`)
             .then(response => response.json())
             .then(data => {
                 if (data.length === 0)
@@ -34,7 +34,7 @@ function DCHomePage() {
 
     const handleConfirmRemove = () => {
         console.log(currentNurse);
-        fetch(`http://version-1-production.up.railway.app/donationcenteradmin/remove-nurse/${currentNurse.User_ID}`, {
+        fetch(`https://version-1-production.up.railway.app/donationcenteradmin/remove-nurse/${currentNurse.User_ID}`, {
             method: 'DELETE'
         })
         .then(response => {
@@ -59,7 +59,7 @@ function DCHomePage() {
 
     const handleAddNurse = (newNurse) => {
         console.log(DC);
-        fetch(`http://version-1-production.up.railway.app/donationcenteradmin/add-nurse/${DC.DC_Admin_ID}`, {
+        fetch(`https://version-1-production.up.railway.app/donationcenteradmin/add-nurse/${DC.DC_Admin_ID}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

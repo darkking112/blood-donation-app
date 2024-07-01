@@ -10,7 +10,7 @@ function ViewPreviousAppointments() {
     const [showEmptyListText, setShowEmptyListText] = useState(false);
     
     useEffect(() => {
-        fetch(`http://version-1-production.up.railway.app/donor/view-previous-appointments/${donorID}`)
+        fetch(`https://version-1-production.up.railway.app/donor/view-previous-appointments/${donorID}`)
             .then(response => response.json())
             .then(data => {
                 if (data.length === 0)
