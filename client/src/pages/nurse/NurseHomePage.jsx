@@ -16,12 +16,12 @@ function NurseHomePage() {
     const nurse = location.state ? location.state.user : null;
 
     useEffect(() => {
-        fetch('http://version-1-production.up.railway.app/nurse/appointment-list', {
+        fetch('https://version-1-production.up.railway.app/nurse/appointment-list', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ DC_ID: 9, timeSlot: timeSlot })
+            body: JSON.stringify({ DC_ID: nurse.DC_ID, timeSlot: timeSlot })
         })
             .then(response => response.json())
             .then(data => {
@@ -42,7 +42,7 @@ function NurseHomePage() {
     };
 
     const handleApprovement = (appointment) => {
-        fetch(`http://version-1-production.up.railway.app/nurse/change-appointment-status/${appointment.Appointment_ID}`, {
+        fetch(`https://version-1-production.up.railway.app/nurse/change-appointment-status/${appointment.Appointment_ID}`, {
             method: 'POST'
         })
             .then(response => response.json())
@@ -76,7 +76,7 @@ function NurseHomePage() {
     }
 
     const confrimAppointment = (type, amount) => {
-        fetch(`http://version-1-production.up.railway.app/nurse/approve-appointment/${approvedAppointment.Appointment_ID}`, {
+        fetch(`https://version-1-production.up.railway.app/nurse/approve-appointment/${approvedAppointment.Appointment_ID}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -108,7 +108,7 @@ function NurseHomePage() {
     }
 
     const rejectAppointment = (appointment) => {
-        fetch(`http://version-1-production.up.railway.app/nurse/reject-appointment/${appointment.Appointment_ID}`, {
+        fetch(`https://version-1-production.up.railway.app/nurse/reject-appointment/${appointment.Appointment_ID}`, {
             method: 'POST'
         })
             .then(response => response.json())
