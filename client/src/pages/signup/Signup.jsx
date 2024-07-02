@@ -113,7 +113,7 @@ function Signup() {
                         <label htmlFor="phone-No">Phone No</label>
                         <input
                             type="text"
-                            maxlength="10"
+                            maxLength="10"
                             id="phone-No"
                             value={phoneNo}
                             onChange={(e) => setPhoneNo(e.target.value)}
@@ -160,7 +160,7 @@ function Signup() {
                         <label htmlFor="icno">IC/Passport No</label>
                         <input
                             type="text"
-                            maxlength="10"
+                            maxLength="10"
                             id="icno"
                             value={ICNo}
                             onChange={(e) => setICNo(e.target.value)}
