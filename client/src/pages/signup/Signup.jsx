@@ -84,6 +84,7 @@ function Signup() {
                         <input
                             type="text"
                             id="name"
+                            maxLength="50"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             required
@@ -93,6 +94,7 @@ function Signup() {
                         <label htmlFor="email">Email</label>
                         <input
                             type="email"
+                            maxLength="50"
                             id="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -103,6 +105,7 @@ function Signup() {
                         <label htmlFor="password">Password</label>
                         <input
                             type="password"
+                            maxLength="20"
                             id="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -124,6 +127,7 @@ function Signup() {
                         <label htmlFor="age">Age</label>
                         <input
                             type="number"
+                            maxLength="3"
                             id="age"
                             value={age}
                             onChange={(e) => setAge(e.target.value)}
