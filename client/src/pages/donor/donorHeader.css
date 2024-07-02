@@ -9,7 +9,6 @@
 
 .donor-header .left-btn {
     margin-left: 80px;
-    margin: 6px 00px 6px 80px;
     background-color: #FFF5E1;
     border: none;
     padding: 10px 20px;
@@ -24,7 +23,6 @@
 
 .donor-header .right-btn {
     margin-right: 80px;
-    margin: 6px 80px 6px 0px;
     background-color: #FFF5E1;
     border: none;
     padding: 10px 20px;
@@ -35,4 +33,43 @@
 
 .donor-header .right-btn:hover {
     background-color: #e8e2d2;
+}
+
+@media (max-width: 480px) {
+
+    .donor-header .left-btn,
+    .donor-header .right-btn {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .donor-header .left-btn,
+    .donor-header .right-btn {
+        margin: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .donor-header {
+        flex-direction: row;
+        /* Keeps buttons in a row but aligned to the edges */
+        padding: 10px 5px;
+        /* Reduce padding to save space */
+        justify-content: space-between;
+        /* Ensures buttons are on the far sides */
+    }
+
+    .donor-header .left-btn,
+    .donor-header .right-btn {
+        margin: 6px, 6px;
+        /* Remove any margin for a cleaner look */
+        padding: 8px 15px;
+        /* Smaller padding to make the buttons less bulky */
+        font-size: 14px;
+        /* Slightly smaller font size for space efficiency */
+        border-radius: 20px;
+        /* Rounded corners but less pronounced */
+    }
 }

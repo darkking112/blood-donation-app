@@ -250,6 +250,43 @@ button.cancel-appointment-btn:hover {
 .view-times-btn:hover , .view-in-map-btn:hover {
     background-color: #7d7c7c;
 }
+
+@media (max-width: 768px) {
+    .donor-home-body .appointment-booking-body {
+        padding: 10px;
+        /* Slightly reduce padding for tablet screens */
+    }
+
+    .donor-home-body .appointment-booking-body .donation-centers-table th,
+    .donor-home-body .appointment-booking-body .donation-centers-table td {
+        padding: 8px;
+        /* Reduce padding in table cells for a more compact look */
+        font-size: 14px;
+        /* Adjust font size for better readability on smaller screens */
+    }
+}
+
+/* Media Queries for Phones */
+@media (max-width: 480px) {
+    .donor-home-body .appointment-booking-body {
+        padding: 5px;
+        /* Reduce padding significantly to save space on small screens */
+    }
+
+    .donor-home-body .appointment-booking-body .donation-centers-table th,
+    .donor-home-body .appointment-booking-body .donation-centers-table td {
+        padding: 6px;
+        /* Further reduce padding in table cells to fit more content */
+        font-size: 12px;
+        /* Smaller font size to ensure everything fits and remains legible */
+    }
+
+    .donor-home-body .appointment-booking-body .donation-centers-table {
+        font-size: 12px;
+        /* Smaller overall font for table to manage space */
+    }
+}
+
 /* 
 .donor-home-body .appointment-booking-body .time-slots-table {
     background-color: #f8f5e4;
