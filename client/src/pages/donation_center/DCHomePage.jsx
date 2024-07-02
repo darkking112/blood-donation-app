@@ -80,7 +80,7 @@ function DCHomePage() {
 
     return (
         <div className="home-page-container">
-            <Header buttonText={"Logout"} name={"Ali"} />
+            <Header buttonText={"Logout"} name={DC.DC_Admin_Name} />
             <div className="donation-center-home-body">
                 <h1>Nurse List</h1>
                 <table className="nurse-list-table">
