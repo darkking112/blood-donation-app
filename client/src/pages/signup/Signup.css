@@ -127,3 +127,17 @@ select {
     width: 100%;
     max-width: 1200px;
 }
+
+@media (max-width: 768px) {
+    .logo-image {
+        display: none;
+        /* Hide logo on screens smaller than 768px */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        display: none;
+        /* This line hides the logo on screens 480px or smaller */
+    }
+}
